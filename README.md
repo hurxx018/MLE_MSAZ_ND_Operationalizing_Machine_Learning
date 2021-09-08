@@ -10,16 +10,6 @@ The model was built using Automated ML (AutoML) service in Azure ML Studio.
 The AutoML identified the best model of VotingEnsemble with the accuracy of ~0.92. 
 This model was deployed and tested through HTTP API.
 
-We built an ML pipeline using Azure ML SDK in Python. 
-A HyperDrive is used to determine optimal hyperparameters for a logistic regression model 
-that is implemented using scikit-learn library. 
-The two hyperparameters: the inverse of regularization (C) and the maximum number of iterations (max-iter) 
-were tested in this project.
-The HyperDrive found out a pair of C~0.19 and max-iter=500.
-The logistic regression model trained with the two hyperparameters showed the accuracy of ~0.91.
-This optimized logistic regression model was then compared to the optimal model of VotingEnsemble from an Azure AutoML run.
-The accuracy of the VotingEnsemble model was ~0.92, which showed slight improvement compared to the logistic regression obtained through HyperDrive.
-
 ## Architectural Diagram
 *TODO*: Provide an architectural diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
 
