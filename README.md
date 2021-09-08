@@ -23,6 +23,10 @@ The accuracy of the VotingEnsemble model was ~0.92, which showed slight improvem
 ## Architectural Diagram
 *TODO*: Provide an architectural diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
 
+A diagram for the model deployment and consumption through REST API.  
+![BankMarketing Data is registered](/images/03_procedure_diagram.png)
+
+
 Bank marketing data was uploaded into Datastore with the name of "BankMarketing Dataset". 
 AutoML run on BankMarketing Dataset to build a classification model. 
 The best model was deployed. 
